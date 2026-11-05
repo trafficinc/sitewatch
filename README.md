@@ -41,7 +41,12 @@ the new baseline. You do not need to restart it.
 
 ## Workflow
 
-Open 2 terminals in the project directory, in one run watch and in the other you will run `changes` once you are finished making all of your edits that you will upload to the server. Keep your `watch` terminal running and manage it in the other terminal. Simple.
+Open two terminals in your project directory:
+
+1. In the first terminal, run ./sitewatch watch and leave it running to see file changes as you work.
+2. When you’re ready to upload, run ./sitewatch changes in the second terminal to see the complete list of pending changes.
+3. Upload added and modified files with your SFTP client, and remove deleted files from the server.
+4. After completing the uploads and deletions, run ./sitewatch clear in the second terminal to reset the checklist.
 
 ## Commands
 
